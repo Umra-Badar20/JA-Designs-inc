@@ -8,6 +8,7 @@
    <meta content="Portfolio of JA Designs inc Agency" name="description" />
    <link href="css/style.css" rel="stylesheet" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
    <style>
       .portfolio-box {
          padding: 0;
@@ -71,8 +72,8 @@
          left: 0;
          width: 100%;
          height: 100%;
-         background: rgba(0, 175, 233, 0.8);
-         /* Using a brand blue */
+         background: rgba(0, 0, 0, 0.85);
+         /* Matches the site's dark theme */
          display: flex;
          justify-content: center;
          align-items: center;
@@ -735,6 +736,21 @@
       </div>
    </div>
    <script defer src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $("[data-fancybox]").fancybox({
+            loop: true,
+            buttons: [
+               "zoom",
+               "slideShow",
+               "fullScreen",
+               "close"
+            ]
+         });
+      });
+   </script>
 </body>
 
 </html>
