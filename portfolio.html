@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+   <meta charset="utf-8" />
+   <meta content="width=device-width, initial-scale=1" name="viewport" />
+   <title>Portfolio - JA Designs inc Agency</title>
+   <meta content="Portfolio of JA Designs inc Agency" name="description" />
+   <link href="css/style.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+      .portfolio-box {
+         padding: 0;
+         background: #00042A;
+      }
+
+      .responsive-slider {
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+         gap: 0;
+         list-style: none;
+         padding: 0;
+         margin: 0;
+      }
+
+      @media (max-width: 1200px) {
+         .responsive-slider {
+            grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+         }
+      }
+
+      @media (max-width: 992px) {
+         .responsive-slider {
+            grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+         }
+      }
+
+      @media (max-width: 768px) {
+         .responsive-slider {
+            grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+         }
+      }
+
+      @media (max-width: 480px) {
+         .responsive-slider {
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+         }
+      }
+
+      .portfolio-item {
+         position: relative;
+         overflow: hidden;
+         aspect-ratio: 1 / 1;
+      }
+
+      .portfolio-item img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         transition: transform 0.5s ease;
+         display: block;
+      }
+
+      .portfolio-item:hover img {
+         transform: scale(1.1);
+      }
+
+      .hover-effect {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 175, 233, 0.8);
+         /* Using a brand blue */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         opacity: 0;
+         transition: opacity 0.3s ease;
+      }
+
+      .portfolio-item:hover .hover-effect {
+         opacity: 1;
+      }
+
+      .hover-effect a {
+         color: #fff;
+         font-size: 30px;
+         text-decoration: none;
+      }
+
+      .hover-effect i {
+         transform: scale(0.5);
+         transition: transform 0.3s ease;
+      }
+
+      .portfolio-item:hover .hover-effect i {
+         transform: scale(1);
+      }
+   </style>
+</head>
+
+<body class="page-portfolio">
+   <!-- SVG Sprite (copied from site for icons) -->
+   <div class="svg-sprite"><svg class="inline-style-0b9e3f2a" height="0" width="0">
+         <!-- Minimal set of symbols used by header/hero -->
+         <symbol fill="none" id="lib-icon-arrow3" viewbox="0 0 14 22" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.5 11L.5 21.5 4.482 11 .5.5l13 10.5z" fill="currentColor"></path>
+         </symbol>
+         <symbol id="stars" viewbox="0 0 168 30">
+            <path
+               d="M10.456 18.842l.143-.37-.329-.224-8.112-5.506H12.5l.114-.341 3.368-10.057 2.988 10.04.106.358H29.43l-8.112 5.506-.306.208.109.354 2.997 9.697-8.245-5.97-.287-.207-.291.201-8.551 5.922 3.713-9.61z"
+               fill="#ECC80D" stroke="#D8B400"></path>
+         </symbol>
+      </svg></div>
+   <a class="action skip skip-to-content" href="#main-content"><span>Skip to Content</span></a>
+   <a class="action skip skip-to-footer" href="#site-footer"><span>Skip to Footer</span></a>
+   <div class="wrapper">
+      <header class="site-header" data-sticky="sticky" role="banner">
+         <div class="site-header__main">
+            <div class="site-header__row container-fluid">
+               <div class="site-header__col -left">
+                  <a aria-label="company logo that leads to home page" class="site-anush__logo" href="#">
+                     <img alt="JA Designs inc Agency" class="logo-anush" src="./assets/images/logoWhite.png"
+                        width="233" />
+                  </a>
+               </div>
+               <div class="site-header__col -right">
+                  <a class="c-btn -primary-v1 -opacity -desktop" href="request-a-quote.html"><span>Request a
+                        Quote</span></a>
+                  <button aria-expanded="false" class="nav-main__btn js-toggleNav" name="Menu" type="button">
+                     <span class="a11y-text">Menu</span>
+                     <div class="burger-icon"><span class="burger-line"></span><span class="burger-line"></span><span
+                           class="burger-line"></span></div>
+                     <div class="nav-cross"></div>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="nav-main__wrap">
+         <div class="menu-logo-wrapper">
+            <img alt="menu-logo" class="menu-logo" fetchpriority="high"
+               src="https://www.digitalsilk.com/wp-content/themes/digitalsilk/assets/_dist/images/menu-logo.webp" />
+            <img alt="menu-logo" class="menu-logo-m" fetchpriority="high"
+               src="https://www.digitalsilk.com/wp-content/themes/digitalsilk/assets/_dist/images/menu-logo-m.svg" />
+         </div>
+         <div class="nav-main">
+            <ul class="nav-main__links" id="menu-header">
+               <li
+                  class="menu-col-1 js-menu-dropdown-toggle menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                  <a class="menu-link main-menu-link"><span class="menu-item-title">Services</span></a>
+                  <button class="sub-menu-toggle js-dropdown-toggle"><span class="c-btn__ico"><svg aria-hidden="true"
+                           class="icon" role="img">
+                           <use xlink:href="#lib-icon-arrow3"></use>
+                        </svg></span></button>
+                  <div class="dropdown-menu-holder js-dropdown-menu-holder">
+                     <ul class="sub-menu">
+                        <li><a class="menu-link sub-menu-link" href="services.html">View All Services</a></li>
+                        <li><a class="menu-link sub-menu-link" href="services.html">Branding</a></li>
+                        <li><a class="menu-link sub-menu-link" href="services.html">Web Design</a></li>
+                     </ul>
+                  </div>
+               </li>
+               <li><a class="menu-link main-menu-link" href="about.html">About</a></li>
+               <li><a class="menu-link main-menu-link" href="./portfolio.html">Portfolio</a></li>
+               <li><a class="menu-link main-menu-link" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="btn-bar"><a class="c-btn -glow -negative" href="request-a-quote.html"><span>REQUEST A
+                     QUOTE</span></a></div>
+         </div>
+      </div>
+      <div class="menu-outside">
+         <main class="site-content" id="main-content" role="main">
+            <section class="m-banner m-banner--large home-hero hero24 js-video-section">
+               <div class="m-banner__container colors-inverted">
+                  <!-- Heading Section -->
+                  <div class="m-banner__content">
+                     <div class="hero-bg_wrap">
+                        <div class="hero-bg_wrap-cols">
+                           <div class="hero-bg_wrap-col">
+                              <div class="hero-bg_wrap-slides v-scroll">
+                                 <div class="hero-bg_wrap_slide">
+                                    <picture><img alt="hero-1" class="img-cover"
+                                          src="https://www.digitalsilk.com/wp-content/uploads/2024/05/1.jpg" />
+                                    </picture>
+                                 </div>
+                                 <div class="hero-bg_wrap_slide">
+                                    <picture><img alt="hero-2" class="img-cover"
+                                          src="https://www.digitalsilk.com/wp-content/uploads/2024/05/2.jpg" />
+                                    </picture>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hero-bg_wrap-col">
+                              <div class="hero-bg_wrap-slides v-scroll">
+                                 <div class="hero-bg_wrap_slide">
+                                    <picture><img alt="hero-3" class="img-cover"
+                                          src="https://www.digitalsilk.com/wp-content/uploads/2024/05/8.jpg" />
+                                    </picture>
+                                 </div>
+                                 <div class="hero-bg_wrap_slide">
+                                    <picture><img alt="hero-4" class="img-cover"
+                                          src="https://www.digitalsilk.com/wp-content/uploads/2024/05/9.jpg" />
+                                    </picture>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="hero-bg_wrap-col">
+                              <div class="hero-bg_wrap-slides v-scroll">
+                                 <div class="hero-bg_wrap_slide">
+                                    <picture><img alt="hero-5" class="img-cover"
+                                          src="https://www.digitalsilk.com/wp-content/uploads/2024/05/13.jpg" />
+                                    </picture>
+                                 </div>
+                                 <div class="hero-bg_wrap_slide">
+                                    <picture><img alt="hero-6" class="img-cover"
+                                          src="https://www.digitalsilk.com/wp-content/uploads/2024/05/14.jpg" />
+                                    </picture>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hero-bg-gradient_overlay"></div>
+                     </div>
+                     <div class="container">
+                        <div class="c-heading -h1">
+                           <div class="c-heading__pre">
+                              <h1>Portfolio</h1>
+                           </div>
+                           <div class="c-heading__title">
+                              <p class="text-shadow-white">Our Work &amp; Case Studies</p>
+                           </div>
+                           <div class="c-heading__sub"><span>Selected projects across branding, web and digital
+                                 marketing</span></div>
+                        </div>
+                        <a class="c-btn -slideover" href="request-a-quote.html"><span><span>Request a
+                                 Quote</span><span class="c-btn__ico"><svg aria-hidden="true"
+                                    class="icon icon-lib-icon-arrow3" role="img">
+                                    <use xlink:href="#lib-icon-arrow3"></use>
+                                 </svg></span></span></a>
+                     </div>
+                  </div>
+            </section>
+            <div class="portfolio-box">
+               <ul class="responsive-slider">
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port1.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port1.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port1.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <!--<li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo" href="/custom/assets/images/webp/portfolio/logo/port2.jpg">
+                           <img src="/custom/assets/images/webp/portfolio/logo/port2.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo" href="/custom/assets/images/webp/portfolio/logo/port2.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>-->
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port3.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port3.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port3.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <!--<li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo" href="/custom/assets/images/webp/portfolio/logo/port4.jpg">
+                           <img src="/custom/assets/images/webp/portfolio/logo/port4.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo" href="/custom/assets/images/webp/portfolio/logo/port4.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>-->
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port5.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port5.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port5.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port6.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port6.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port6.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port7.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port7.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port7.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port8.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port8.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port8.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port9.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port9.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port9.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port10.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port10.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port10.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port11.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port11.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port11.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port12.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port12.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port12.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port13.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port13.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port13.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port14.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port14.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port14.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port15.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port15.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port15.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port16.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port16.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port16.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port17.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port17.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port17.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port18.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port18.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port18.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port19.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port19.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port19.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port20.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port20.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port20.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port21.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port21.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port21.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port22.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port22.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port22.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port23.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port23.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port23.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port24.jpg">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port24.jpg">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/port24.jpg">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/1.webp">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/1.webp">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/1.webp">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/2.webp">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/2.webp">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/2.webp">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/3.webp">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/3.webp">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/3.webp">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/4.webp">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/4.webp">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/4.webp">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/5.webp">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/5.webp">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/5.webp">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/6.webp">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/6.webp">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/6.webp">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/7.webp">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/7.webp">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/7.webp">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="portfolio-item">
+                        <a data-fancybox="portfoliologo"
+                           href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/8.webp">
+                           <img
+                              src="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/8.webp">
+                        </a>
+                        <div class="hover-effect">
+                           <a data-fancybox="portfoliologo"
+                              href="https://modevodesign.com/wp-content/themes/ldi/custom/assets/images/webp/portfolio/logo/8.webp">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <!-- Page Content -->
+            <section class="container gap-top gap-bottom">
+               <h2>Featured Projects</h2>
+               <p>Portfolio content coming soon. Duplicate the layout and components from the index as needed.</p>
+            </section>
+         </main>
+         <footer id="site-footer" class="site-footer" role="contentinfo">
+            <div class="container">
+               <div class="copy-privacy row">©All Rights Reserved 2026 – Designed By: Modevo Design</div>
+            </div>
+         </footer>
+      </div>
+   </div>
+   <script defer src="js/script.js"></script>
+</body>
+
+</html>
