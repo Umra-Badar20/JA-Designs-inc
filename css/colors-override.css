@@ -16,3 +16,56 @@
 .text-shadow-white {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
+
+/* our__facts section: large dark stats area matching reference */
+.our__facts{
+  position:relative;
+  padding:88px 0 64px;
+  background:linear-gradient(90deg,var(--primary-color2) 0%, rgba(8,6,18,1) 100%);
+  color:#fff;
+  overflow:hidden;
+}
+.our__facts .container{position:relative;z-index:2}
+.our__facts .element-13{position:absolute;left:0;top:0;bottom:0;width:48%;overflow:hidden}
+.our__facts .element-13 img{width:70%;height:auto;object-fit:cover;display:block}
+.our__facts .fact-box{position:relative;background:rgba(0,0,0,0.56);padding:48px;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,0.6)}
+.our__facts .bg__text.element{position:absolute;right:40px;top:10px;font-size:220px;line-height:1;color:#fff;opacity:0.04;font-weight:900;pointer-events:none;user-select:none}
+.our__facts h5{font-size:40px;margin:0 0 12px;color:#fff;font-weight:900}
+.our__facts p{color:rgba(255,255,255,0.72);font-size:15px;max-width:740px}
+.our__facts .completed-projects{display:flex;gap:2.5rem;margin:28px 0 0;padding:0;list-style:none}
+.our__facts .completed-projects li{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px}
+.our__facts .completed-projects li span{display:inline-block;width:34px;height:34px;border-radius:50%}
+.our__facts .completed-projects li:nth-child(1) span{background:var(--primary-color1)}
+.our__facts .completed-projects li:nth-child(2) span{background:var(--secondary-color2)}
+.our__facts .completed-projects li:nth-child(3) span{background:var(--secondary-color6)}
+.our__facts .completed-projects h6{margin:0;font-size:48px;color:#fff;font-weight:900}
+.our__facts .completed-projects p{margin:0;color:rgba(255,255,255,0.72)}
+.our__facts .contact-details{margin-top:28px}
+.our__facts .contact-details .btn-style-2{display:inline-block;padding:12px 26px;border-radius:28px;background:linear-gradient(90deg,var(--secondary-color3),var(--secondary-color2));color:#fff;font-weight:800;text-decoration:none;box-shadow:0 8px 26px rgba(var(--primary-color1-rgb),0.18)}
+.our__facts .contact-details a{color:rgba(255,255,255,0.9);text-decoration:none}
+.our__facts .contact-details a:hover{opacity:.95}
+
+/* thin divider under stats like reference */
+.our__facts .stats-divider{height:1px;background:rgba(255,255,255,0.04);margin:36px 0}
+
+@media (max-width:991px){
+  .our__facts .bg__text.element{font-size:120px;right:10px}
+  .our__facts .element-13{display:none}
+  .our__facts .completed-projects{gap:1.25rem}
+  .our__facts .completed-projects h6{font-size:34px}
+}
+
+@media (max-width:575px){
+  .our__facts{padding:40px 0}
+  .our__facts .completed-projects{flex-direction:column}
+  .our__facts .completed-projects li{align-items:flex-start}
+  .our__facts .completed-projects h6{font-size:28px}
+}
+
+/* Restore hero counters if styles were affected by the our__facts rule set */
+.s-hero-tabs .m-counter .c-counter__number,
+.s-hero-tabs .m-counter .c-counter__data,
+.s-hero-tabs .m-counter .c-block__title {
+  color: #ffffff !important;
+}
+.s-hero-tabs .m-counter .c-counter__number {font-weight:800}
