@@ -2,7 +2,7 @@
 /* JSON-LD removed (duplicate in about.html head) */
 
 var ds = {
-    "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"about\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"about\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}";
+    "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"about\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"about\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}";}
     //# sourceURL=jquery-core-js-extra
 
     var svgSettings = { "skipNested": "" };
@@ -33,6 +33,7 @@ var ds = {
     _hsq.push(["setContentType", "standard-page"]);
 
     document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
+
 
 /* {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/digitalsilk/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]} */
 
@@ -218,7 +219,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -229,7 +230,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -472,7 +473,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -483,7 +484,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -726,7 +727,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -737,7 +738,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -1082,7 +1083,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -1093,7 +1094,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -1336,7 +1337,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -1347,7 +1348,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -1590,7 +1591,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -1601,7 +1602,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -1844,7 +1845,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -1855,7 +1856,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -2098,7 +2099,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -2109,7 +2110,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -2162,11 +2163,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* ========== JavaScript migrated from index.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -2189,11 +2190,11 @@ gform.initializeOnLoaded(function () { gformInitSpinner(9, 'https://www.digitals
 
 /* ========== JavaScript migrated from index.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -2211,11 +2212,11 @@ gform.initializeOnLoaded(function () { gformInitSpinner(6, 'https://www.digitals
 
 /* ========== JavaScript migrated from index.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -2233,11 +2234,11 @@ gform.initializeOnLoaded(function () { gformInitSpinner(7, 'https://www.digitals
 
 /* ========== JavaScript migrated from index.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -2305,7 +2306,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -2316,7 +2317,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -2448,11 +2449,11 @@ _hsq.push(["setContentType", "standard-page"]);
 
 /* ========== JavaScript migrated from about.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -2475,11 +2476,11 @@ gform.initializeOnLoaded(function () { gformInitSpinner(6, 'https://www.digitals
 
 /* ========== JavaScript migrated from about.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -2612,11 +2613,11 @@ _hsq.push(["setContentType", "standard-page"]);
 
 /* ========== JavaScript migrated from contact.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -2749,11 +2750,11 @@ _hsq.push(["setContentType", "standard-page"]);
 
 /* ========== JavaScript migrated from services.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -2776,11 +2777,11 @@ gform.initializeOnLoaded(function () { gformInitSpinner(6, 'https://www.digitals
 
 /* ========== JavaScript migrated from services.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -2843,7 +2844,7 @@ window.addConsentUpdateListener = (callback) => {
 };
 document.addEventListener("cmplz_fire_categories", function (e) {
     var consentedCategories = e.detail.categories;
-var consent = {
+    var consent = {
         'security_storage': "granted",
         'functionality_storage': "granted",
         'personalization_storage': cmplz_in_array('preferences', consentedCategories) ? 'granted' : 'denied',
@@ -2854,7 +2855,7 @@ var consent = {
     };
 
     //don't use automatic prefixing, as the TM template needs to be sure it's cmplz_.
-var consented = [];
+    var consented = [];
     for (const [key, value] of Object.entries(consent)) {
         if (value === 'granted') {
             consented.push(key);
@@ -3063,11 +3064,11 @@ _hsq.push(["setContentType", "standard-page"]);
 
 /* ========== JavaScript migrated from request-a-quote.html ========== */
 document.addEventListener('gform_post_render', function () {
-var disabled = document.querySelectorAll('.gf_readonly');
+    var disabled = document.querySelectorAll('.gf_readonly');
     disabled.forEach((element) => {
         element.querySelector('input').setAttribute('disabled', 'disabled');
     });
-var mandatory = document.querySelectorAll('.mandatory');
+    var mandatory = document.querySelectorAll('.mandatory');
     mandatory.forEach((element) => {
         element.querySelector('input[type=radio]').setAttribute('onclick', 'return false;');
     });
@@ -3173,8 +3174,8 @@ gform.initializeOnLoaded(function () { gformInitSpinner(7, 'https://www.digitals
 
         /* --- Automatic Animation Trigger for Video Sections --- */
         if (!window.__animationObserverBound) {
-            var animationObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+            var animationObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-playing');
                         var playBtn = entry.target.querySelector('.btn-play');
@@ -3185,7 +3186,7 @@ gform.initializeOnLoaded(function () { gformInitSpinner(7, 'https://www.digitals
                 });
             }, { threshold: 0.1 });
 
-            document.querySelectorAll('.js-video-section').forEach(function(section) {
+            document.querySelectorAll('.js-video-section').forEach(function (section) {
                 animationObserver.observe(section);
             });
             window.__animationObserverBound = true;

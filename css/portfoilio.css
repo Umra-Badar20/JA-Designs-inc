@@ -1,0 +1,238 @@
+
+      .portfolio-box {
+         padding: 0;
+         background: #00042A;
+      }
+
+      .responsive-slider {
+         display: grid;
+         /* Default: 8 columns for large screens as requested */
+         grid-template-columns: repeat(8, 1fr);
+         gap: 0;
+         list-style: none;
+         padding: 0;
+         margin: 0;
+      }
+
+      /* Large Desktop / Standard Desktop override if needed */
+      @media (max-width: 1600px) {
+         .responsive-slider {
+            grid-template-columns: repeat(6, 1fr);
+         }
+      }
+
+      @media (max-width: 1366px) {
+         .responsive-slider {
+            grid-template-columns: repeat(5, 1fr);
+         }
+      }
+
+      @media (max-width: 1200px) {
+         .responsive-slider {
+            grid-template-columns: repeat(4, 1fr);
+         }
+      }
+      @media (max-width:1280px) {
+         .c-heading.-h1 {
+            max-width: 100%;
+         }
+      }
+
+      @media (max-width: 992px) {
+         .responsive-slider {
+            grid-template-columns: repeat(3, 1fr);
+         }
+      }
+
+      @media (max-width: 768px) {
+         .responsive-slider {
+            grid-template-columns: repeat(2, 1fr);
+         }
+      }
+
+      @media (max-width: 480px) {
+         .responsive-slider {
+            grid-template-columns: repeat(1, 1fr);
+         }
+      }
+
+      .portfolio-item {
+         position: relative;
+         overflow: hidden;
+         aspect-ratio: 1 / 1;
+      }
+
+      .portfolio-item img {
+         width: 90%;
+         height: 90%;
+         margin: auto auto;
+         object-fit: cover;
+         transition: transform 0.5s ease;
+         display: block;
+      }
+
+      .portfolio-item:hover img {
+         transform: scale(1.1);
+      }
+
+      .hover-effect {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.85);
+         /* Matches the site's dark theme */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         opacity: 0;
+         transition: opacity 0.3s ease;
+      }
+
+      .portfolio-item:hover .hover-effect {
+         opacity: 1;
+      }
+
+      .hover-effect a {
+         color: #fff;
+         font-size: 30px;
+         text-decoration: none;
+      }
+
+      .hover-effect i {
+         transform: scale(0.5);
+         transition: transform 1s ease;
+      }
+
+      .portfolio-item:hover .hover-effect i {
+         transform: scale(1);
+      }
+      /* New styles for Portfolio Tabs and Heading */
+      .portfolio.portolio-pg {
+         background: var(--body-bg-alt, #00042A);
+         /* padding: 80px 0; */
+         text-align: center;
+         position: relative;
+         overflow: hidden;
+      }
+
+      .headingstyle1 h6 {
+         color: var(--secondary-color3, #04E4FF);
+         font-size: 20px;
+         font-weight: 600;
+         margin-bottom: 15px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         text-shadow: 0 0 10px rgba(4, 228, 255, 0.5);
+         /* Glow effect from theme */
+      }
+
+      .headingstyle1 h3 {
+         color: var(--primary-color3, #fff);
+         font-size: 48px;
+         font-weight: 700;
+         margin-bottom: 20px;
+         line-height: 1.2;
+      }
+
+      .headingstyle1 p {
+         color: #a8a8a8;
+         font-size: 14px;
+         /* max-width: 700px; */
+         margin: 0 auto 40px;
+         line-height: 1.6;
+      }
+
+      .custom-tab-list {
+         margin-bottom: 50px;
+      }
+
+      .custom-tab-list ul {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         list-style: none;
+         padding: 0;
+         margin: 0;
+      }
+
+      .custom-tab-list ul li {
+         margin: 10px 15px;
+         cursor: pointer;
+         /* Ensure pointer cursor */
+      }
+
+      .custom-tab-list ul li a {
+         color: var(--primary-color3, #fff);
+         text-decoration: none;
+         font-size: 18px;
+         font-weight: 500;
+         transition: color 0.3s ease, text-shadow 0.3s ease;
+      }
+
+      .custom-tab-list ul li.active a,
+      .custom-tab-list ul li a:hover {
+         color: var(--secondary-color3, #04E4FF);
+         text-shadow: 0 0 8px rgba(4, 228, 255, 0.4);
+      }
+
+      /* Decorative Elements */
+      .element {
+         position: absolute;
+         pointer-events: none;
+         z-index: 1;
+      }
+
+      .element-16 {
+         top: 50px;
+         left: 50px;
+         width: 150px;
+      }
+
+      .element-6 {
+         top: 50%;
+         right: 30px;
+         transform: translateY(-50%);
+         width: 80px;
+         opacity: 0.6;
+      }
+
+      .element img {
+         width: 100%;
+         height: auto;
+      }
+
+      /* Adjustment for sections */
+      .box-logodesign,
+      .box-ecommerceweb,
+      .box-webdesign,
+      .box-branding,
+      .box-videoanimation,
+      .box-illustration,
+      .box-mobapp {
+         display: none;
+         width: 100%;
+      }
+
+      .box-logodesign.showfirst {
+         display: block;
+      }
+
+      .container-fluid {
+         padding: 0;
+      }
+   .portfolioVideo video{
+    width: 574px;
+
+   }
+   .m-banner{
+    --banner-height--small: 300px;
+    --banner-height--medium: 500px;
+    --banner-height--blog: 400px;
+    --banner-height--full: 100vh;
+   --banner-height--large: 100vh;
+   }
+   /* .element{
+    display: none;
+   } */

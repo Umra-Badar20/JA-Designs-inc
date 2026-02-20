@@ -1447,7 +1447,9 @@ html {
 }
 
 .site-header.is-sticky {
-    --header-main-bg: rgba(19, 39, 97, 0.95)
+    --header-main-bg: rgba(19, 39, 97, 0.95);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15), 0 4px 20px rgba(149, 54, 229, 0.1);
+    transition: all 0.3s ease
 }
 
 .site-header__main {
@@ -12493,3 +12495,13 @@ body.ppc .hero-download .l-dcbl .cta-bar .wpcf7-submit>span {
     }
 }
 
+/* Hide SVG sprite container */
+.svg-sprite {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: none;
+}

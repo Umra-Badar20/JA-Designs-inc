@@ -1571,6 +1571,16 @@ article figure video {
 .m-partners .c-btn.-play .fbVid img {
     opacity: 0
 }
+.c-btn.-play .c-btn__ico{
+        width: 26rem;
+    flex: 0 0 26rem;
+    max-width: none;
+    margin-right: 20px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .single-post__content .gform_wrapper.gravity-theme .gchoice {
     display: -webkit-box;
