@@ -1,43 +1,45 @@
 /* ========== JavaScript from about.html ========== */
 /* JSON-LD removed (duplicate in about.html head) */
+// Tab navigation handler
 
 var ds = {
-    "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"about\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"about\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}";}
-    //# sourceURL=jquery-core-js-extra
+    "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"about\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"about\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}";
+}
+//# sourceURL=jquery-core-js-extra
 
-    var svgSettings = { "skipNested": "" };
-    //# sourceURL=bodhi_svg_inline-js-extra
+var svgSettings = { "skipNested": "" };
+//# sourceURL=bodhi_svg_inline-js-extra
 
-    cssTarget={ "Bodhi": "img.style-svg", "ForceInlineSVG": "style-svg" }; ForceInlineSVGActive="false"; frontSanitizationEnabled=false;
-    //# sourceURL=bodhi_svg_inline-js-after
+cssTarget = { "Bodhi": "img.style-svg", "ForceInlineSVG": "style-svg" }; ForceInlineSVGActive = "false"; frontSanitizationEnabled = false;
+//# sourceURL=bodhi_svg_inline-js-after
 
-    var objectL10n = { "yopPollParams": { "urlParams": { "ajax": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "wpLogin": "https://www.digitalsilk.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.digitalsilk.com%2Fwp-admin%2Fadmin-ajax.php%3Faction%3Dyop_poll_record_wordpress_vote" }, "apiParams": { "reCaptcha": { "siteKey": "" }, "reCaptchaV2Invisible": { "siteKey": "" }, "reCaptchaV3": { "siteKey": "" }, "hCaptcha": { "siteKey": "" }, "cloudflareTurnstile": { "siteKey": "" } }, "captchaParams": { "imgPath": "https://www.digitalsilk.com/wp-content/plugins/yop-poll/public/assets/img/", "url": "https://www.digitalsilk.com/wp-content/plugins/yop-poll/app.php", "accessibilityAlt": "Sound icon", "accessibilityTitle": "Accessibility option: listen to a question and answer it!", "accessibilityDescription": "Type below the \u003Cstrong\u003Eanswer\u003C/strong\u003E to what you hear. Numbers or words:", "explanation": "Click or touch the \u003Cstrong\u003EANSWER\u003C/strong\u003E", "refreshAlt": "Refresh/reload icon", "refreshTitle": "Refresh/reload: get new images and accessibility option!" }, "voteParams": { "invalidPoll": "Invalid Poll", "noAnswersSelected": "No answer selected", "minAnswersRequired": "At least {min_answers_allowed} answer(s) required", "maxAnswersRequired": "A max of {max_answers_allowed} answer(s) accepted", "noAnswerForOther": "No other answer entered", "noValueForCustomField": "{custom_field_name} is required", "tooManyCharsForCustomField": "Text for {custom_field_name} is too long", "consentNotChecked": "You must agree to our terms and conditions", "noCaptchaSelected": "Captcha is required", "thankYou": "Thank you for your vote" }, "resultsParams": { "singleVote": "vote", "multipleVotes": "votes", "singleAnswer": "answer", "multipleAnswers": "answers" } } };
-    //# sourceURL=yop-public-js-extra
+var objectL10n = { "yopPollParams": { "urlParams": { "ajax": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "wpLogin": "https://www.digitalsilk.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.digitalsilk.com%2Fwp-admin%2Fadmin-ajax.php%3Faction%3Dyop_poll_record_wordpress_vote" }, "apiParams": { "reCaptcha": { "siteKey": "" }, "reCaptchaV2Invisible": { "siteKey": "" }, "reCaptchaV3": { "siteKey": "" }, "hCaptcha": { "siteKey": "" }, "cloudflareTurnstile": { "siteKey": "" } }, "captchaParams": { "imgPath": "https://www.digitalsilk.com/wp-content/plugins/yop-poll/public/assets/img/", "url": "https://www.digitalsilk.com/wp-content/plugins/yop-poll/app.php", "accessibilityAlt": "Sound icon", "accessibilityTitle": "Accessibility option: listen to a question and answer it!", "accessibilityDescription": "Type below the \u003Cstrong\u003Eanswer\u003C/strong\u003E to what you hear. Numbers or words:", "explanation": "Click or touch the \u003Cstrong\u003EANSWER\u003C/strong\u003E", "refreshAlt": "Refresh/reload icon", "refreshTitle": "Refresh/reload: get new images and accessibility option!" }, "voteParams": { "invalidPoll": "Invalid Poll", "noAnswersSelected": "No answer selected", "minAnswersRequired": "At least {min_answers_allowed} answer(s) required", "maxAnswersRequired": "A max of {max_answers_allowed} answer(s) accepted", "noAnswerForOther": "No other answer entered", "noValueForCustomField": "{custom_field_name} is required", "tooManyCharsForCustomField": "Text for {custom_field_name} is too long", "consentNotChecked": "You must agree to our terms and conditions", "noCaptchaSelected": "Captcha is required", "thankYou": "Thank you for your vote" }, "resultsParams": { "singleVote": "vote", "multipleVotes": "votes", "singleAnswer": "answer", "multipleAnswers": "answers" } } };
+//# sourceURL=yop-public-js-extra
 
-    var _hsq = _hsq || [];
-    _hsq.push(["setContentType", "standard-page"]);
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
 
-    var ds = { "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"error\":\"\",\"m\":\"\",\"p\":\"8\",\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"\",\"pagename\":\"\",\"page_id\":\"8\",\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}" };
-    //# sourceURL=jquery-core-js-extra
+var ds = { "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"error\":\"\",\"m\":\"\",\"p\":\"8\",\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"\",\"pagename\":\"\",\"page_id\":\"8\",\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}" };
+//# sourceURL=jquery-core-js-extra
 
-    var svgSettings = { "skipNested": "" };
-    //# sourceURL=bodhi_svg_inline-js-extra
+var svgSettings = { "skipNested": "" };
+//# sourceURL=bodhi_svg_inline-js-extra
 
-    cssTarget={ "Bodhi": "img.style-svg", "ForceInlineSVG": "style-svg" }; ForceInlineSVGActive="false"; frontSanitizationEnabled=false;
-    //# sourceURL=bodhi_svg_inline-js-after
+cssTarget = { "Bodhi": "img.style-svg", "ForceInlineSVG": "style-svg" }; ForceInlineSVGActive = "false"; frontSanitizationEnabled = false;
+//# sourceURL=bodhi_svg_inline-js-after
 
-    var objectL10n = { "yopPollParams": { "urlParams": { "ajax": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "wpLogin": "https://www.digitalsilk.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.digitalsilk.com%2Fwp-admin%2Fadmin-ajax.php%3Faction%3Dyop_poll_record_wordpress_vote" }, "apiParams": { "reCaptcha": { "siteKey": "" }, "reCaptchaV2Invisible": { "siteKey": "" }, "reCaptchaV3": { "siteKey": "" }, "hCaptcha": { "siteKey": "" }, "cloudflareTurnstile": { "siteKey": "" } }, "captchaParams": { "imgPath": "https://www.digitalsilk.com/wp-content/plugins/yop-poll/public/assets/img/", "url": "https://www.digitalsilk.com/wp-content/plugins/yop-poll/app.php", "accessibilityAlt": "Sound icon", "accessibilityTitle": "Accessibility option: listen to a question and answer it!", "accessibilityDescription": "Type below the \u003Cstrong\u003Eanswer\u003C/strong\u003E to what you hear. Numbers or words:", "explanation": "Click or touch the \u003Cstrong\u003EANSWER\u003C/strong\u003E", "refreshAlt": "Refresh/reload icon", "refreshTitle": "Refresh/reload: get new images and accessibility option!" }, "voteParams": { "invalidPoll": "Invalid Poll", "noAnswersSelected": "No answer selected", "minAnswersRequired": "At least {min_answers_allowed} answer(s) required", "maxAnswersRequired": "A max of {max_answers_allowed} answer(s) accepted", "noAnswerForOther": "No other answer entered", "noValueForCustomField": "{custom_field_name} is required", "tooManyCharsForCustomField": "Text for {custom_field_name} is too long", "consentNotChecked": "You must agree to our terms and conditions", "noCaptchaSelected": "Captcha is required", "thankYou": "Thank you for your vote" }, "resultsParams": { "singleVote": "vote", "multipleVotes": "votes", "singleAnswer": "answer", "multipleAnswers": "answers" } } };
-    //# sourceURL=yop-public-js-extra
+var objectL10n = { "yopPollParams": { "urlParams": { "ajax": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "wpLogin": "https://www.digitalsilk.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.digitalsilk.com%2Fwp-admin%2Fadmin-ajax.php%3Faction%3Dyop_poll_record_wordpress_vote" }, "apiParams": { "reCaptcha": { "siteKey": "" }, "reCaptchaV2Invisible": { "siteKey": "" }, "reCaptchaV3": { "siteKey": "" }, "hCaptcha": { "siteKey": "" }, "cloudflareTurnstile": { "siteKey": "" } }, "captchaParams": { "imgPath": "https://www.digitalsilk.com/wp-content/plugins/yop-poll/public/assets/img/", "url": "https://www.digitalsilk.com/wp-content/plugins/yop-poll/app.php", "accessibilityAlt": "Sound icon", "accessibilityTitle": "Accessibility option: listen to a question and answer it!", "accessibilityDescription": "Type below the \u003Cstrong\u003Eanswer\u003C/strong\u003E to what you hear. Numbers or words:", "explanation": "Click or touch the \u003Cstrong\u003EANSWER\u003C/strong\u003E", "refreshAlt": "Refresh/reload icon", "refreshTitle": "Refresh/reload: get new images and accessibility option!" }, "voteParams": { "invalidPoll": "Invalid Poll", "noAnswersSelected": "No answer selected", "minAnswersRequired": "At least {min_answers_allowed} answer(s) required", "maxAnswersRequired": "A max of {max_answers_allowed} answer(s) accepted", "noAnswerForOther": "No other answer entered", "noValueForCustomField": "{custom_field_name} is required", "tooManyCharsForCustomField": "Text for {custom_field_name} is too long", "consentNotChecked": "You must agree to our terms and conditions", "noCaptchaSelected": "Captcha is required", "thankYou": "Thank you for your vote" }, "resultsParams": { "singleVote": "vote", "multipleVotes": "votes", "singleAnswer": "answer", "multipleAnswers": "answers" } } };
+//# sourceURL=yop-public-js-extra
 
-    var _hsq = _hsq || [];
-    _hsq.push(["setContentType", "standard-page"]);
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
 
-    document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
+document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
 
 
 /* {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/digitalsilk/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]} */
 
-{
+/* {
     "@context": "https://schema.org",
         "@graph": [
             {
@@ -152,7 +154,7 @@ var ds = {
                     }
                 }
             },
-            {
+            /* {
                 "@context": "https://schema.org/",
                 "@type": "Product",
                 "name": "Mark Digital Agency Web Design Agency",
@@ -163,8 +165,8 @@ var ds = {
                     "worstRating": "1",
                     "ratingCount": "114"
                 }
-            }
-        ]
+            } */
+       */  ]
 }
 
 var leadin_wordpress = { "userRole": "visitor", "pageType": "home", "leadinPluginVersion": "11.3.33" };
@@ -255,7 +257,7 @@ wto.push(['webTraxs']);
 })();
 
 /* ========== JavaScript from contact.html ========== */
-{ "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "contact", "url": "contact", "name": "Contact - Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2022-07-21T15:58:15+00:00", "dateModified": "2023-11-07T15:45:59+00:00", "description": "Contact us for a digital makeover. Services include custom web & app development, and digital marketing. Let us help your business succeed online.", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["contact"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] }
+/* { "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "contact", "url": "contact", "name": "Contact - Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2022-07-21T15:58:15+00:00", "dateModified": "2023-11-07T15:45:59+00:00", "description": "Contact us for a digital makeover. Services include custom web & app development, and digital marketing. Let us help your business succeed online.", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["contact"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] } */
 
 var ds = { "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"contact\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"contact\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}" };
 //# sourceURL=jquery-core-js-extra
@@ -289,9 +291,9 @@ _hsq.push(["setContentType", "standard-page"]);
 
 document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
 
-{ "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] }
+/* { "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] } */
 
-{
+/* {
     "@context": "https://schema.org",
         "@graph": [
             {
@@ -406,7 +408,7 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     }
                 }
             },
-            {
+            /* {
                 "@context": "https://schema.org/",
                 "@type": "Product",
                 "name": "Mark Digital Agency Web Design Agency",
@@ -417,8 +419,8 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     "worstRating": "1",
                     "ratingCount": "114"
                 }
-            }
-        ]
+            } */
+       */  ]
 }
 
 var leadin_wordpress = { "userRole": "visitor", "pageType": "home", "leadinPluginVersion": "11.3.33" };
@@ -509,7 +511,7 @@ wto.push(['webTraxs']);
 })();
 
 /* ========== JavaScript from graphic-design.html ========== */
-{ "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/graphic-design/", "url": "https://www.digitalsilk.com/graphic-design/", "name": "Graphic Design Agency | Branding Services | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2023-03-10T15:57:24+00:00", "dateModified": "2025-07-09T14:56:08+00:00", "description": "Work with a top graphic design agency to grow your brand authority, visibility and engagement. View our work >", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/graphic-design/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] }
+/* { "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/graphic-design/", "url": "https://www.digitalsilk.com/graphic-design/", "name": "Graphic Design Agency | Branding Services | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2023-03-10T15:57:24+00:00", "dateModified": "2025-07-09T14:56:08+00:00", "description": "Work with a top graphic design agency to grow your brand authority, visibility and engagement. View our work >", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/graphic-design/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] } */
 
 var ds = { "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"graphic-design\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"graphic-design\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}" };
 //# sourceURL=jquery-core-js-extra
@@ -543,9 +545,9 @@ _hsq.push(["setContentType", "standard-page"]);
 
 document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
 
-{ "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] }
+/* { "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] } */
 
-{
+/* {
     "@context": "https://schema.org",
         "@graph": [
             {
@@ -660,7 +662,7 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     }
                 }
             },
-            {
+            /* {
                 "@context": "https://schema.org/",
                 "@type": "Product",
                 "name": "Mark Digital Agency Web Design Agency",
@@ -671,8 +673,8 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     "worstRating": "1",
                     "ratingCount": "114"
                 }
-            }
-        ]
+            } */
+       */  ]
 }
 
 var leadin_wordpress = { "userRole": "visitor", "pageType": "home", "leadinPluginVersion": "11.3.33" };
@@ -803,7 +805,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime());
 /* ]]&gt; */
 
-{
+/* {
     "@context": "https://schema.org",
         "@type": "FAQPage",
             "mainEntity": [
@@ -889,7 +891,7 @@ document.getElementById("ak_js_1").setAttribute("value", (new Date()).getTime())
                 }
 
             ]
-}
+} */
 
 document.getElementById("ak_js_2").setAttribute("value", (new Date()).getTime());
 /* ]]&gt; */
@@ -899,9 +901,9 @@ document.getElementById("ak_js_3").setAttribute("value", (new Date()).getTime())
 
 document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
 
-{ "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] }
+/* { "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] } */
 
-{
+/* {
     "@context": "https://schema.org",
         "@graph": [
             {
@@ -1016,7 +1018,7 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     }
                 }
             },
-            {
+            /* {
                 "@context": "https://schema.org/",
                 "@type": "Product",
                 "name": "Mark Digital Agency Web Design Agency",
@@ -1027,8 +1029,8 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     "worstRating": "1",
                     "ratingCount": "114"
                 }
-            }
-        ]
+            } */
+       */  ]
 }
 
 var leadin_wordpress = { "userRole": "visitor", "pageType": "home", "leadinPluginVersion": "11.3.33" };
@@ -1119,7 +1121,7 @@ wto.push(['webTraxs']);
 })();
 
 /* ========== JavaScript from law-firm-website-design.html ========== */
-{ "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/web-design/law-firm-website-design/", "url": "https://www.digitalsilk.com/web-design/law-firm-website-design/", "name": "Law Firm Website Design Company | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2022-09-19T11:39:57+00:00", "dateModified": "2025-06-03T12:01:56+00:00", "description": "Custom law firm website design & SEO services to grow your legal practice. Mobile-friendly, fast & optimized for search rankings. Start today!", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/web-design/law-firm-website-design/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] }
+/* { "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/web-design/law-firm-website-design/", "url": "https://www.digitalsilk.com/web-design/law-firm-website-design/", "name": "Law Firm Website Design Company | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2022-09-19T11:39:57+00:00", "dateModified": "2025-06-03T12:01:56+00:00", "description": "Custom law firm website design & SEO services to grow your legal practice. Mobile-friendly, fast & optimized for search rankings. Start today!", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/web-design/law-firm-website-design/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] } */
 
 var ds = { "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"law-firm-website-design\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"law-firm-website-design\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}" };
 //# sourceURL=jquery-core-js-extra
@@ -1153,9 +1155,9 @@ _hsq.push(["setContentType", "standard-page"]);
 
 document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
 
-{ "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] }
+/* { "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] } */
 
-{
+/* {
     "@context": "https://schema.org",
         "@graph": [
             {
@@ -1270,7 +1272,7 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     }
                 }
             },
-            {
+            /* {
                 "@context": "https://schema.org/",
                 "@type": "Product",
                 "name": "Mark Digital Agency Web Design Agency",
@@ -1281,8 +1283,8 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     "worstRating": "1",
                     "ratingCount": "114"
                 }
-            }
-        ]
+            } */
+       */  ]
 }
 
 var leadin_wordpress = { "userRole": "visitor", "pageType": "home", "leadinPluginVersion": "11.3.33" };
@@ -1373,7 +1375,7 @@ wto.push(['webTraxs']);
 })();
 
 /* ========== JavaScript from logo-design.html ========== */
-{ "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/logo-design/", "url": "https://www.digitalsilk.com/logo-design/", "name": "Logo Design Agency | Branding Services | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2023-03-02T13:56:13+00:00", "dateModified": "2026-01-20T13:39:19+00:00", "description": "Partner with a top-rated logo design agency to position your brand for higher visibility, recognition and online growth. View our work >", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/logo-design/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] }
+/* { "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/logo-design/", "url": "https://www.digitalsilk.com/logo-design/", "name": "Logo Design Agency | Branding Services | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2023-03-02T13:56:13+00:00", "dateModified": "2026-01-20T13:39:19+00:00", "description": "Partner with a top-rated logo design agency to position your brand for higher visibility, recognition and online growth. View our work >", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/logo-design/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] } */
 
 var ds = { "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"logo-design\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"logo-design\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}" };
 //# sourceURL=jquery-core-js-extra
@@ -1407,9 +1409,9 @@ _hsq.push(["setContentType", "standard-page"]);
 
 document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
 
-{ "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] }
+/* { "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] } */
 
-{
+/* {
     "@context": "https://schema.org",
         "@graph": [
             {
@@ -1524,7 +1526,7 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     }
                 }
             },
-            {
+            /* {
                 "@context": "https://schema.org/",
                 "@type": "Product",
                 "name": "Mark Digital Agency Web Design Agency",
@@ -1535,8 +1537,8 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     "worstRating": "1",
                     "ratingCount": "114"
                 }
-            }
-        ]
+            } */
+       */  ]
 }
 
 var leadin_wordpress = { "userRole": "visitor", "pageType": "home", "leadinPluginVersion": "11.3.33" };
@@ -1627,7 +1629,7 @@ wto.push(['webTraxs']);
 })();
 
 /* ========== JavaScript from restaurant-website-design.html ========== */
-{ "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/web-design/restaurant-website-design/", "url": "https://www.digitalsilk.com/web-design/restaurant-website-design/", "name": "Restaurant Website Design Services | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2022-11-21T18:09:01+00:00", "dateModified": "2025-12-19T21:15:50+00:00", "description": "Looking for restaurant website design services? Design your website with Mark Digital Agency and attract more customers! View our work »", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/web-design/restaurant-website-design/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] }
+/* { "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/web-design/restaurant-website-design/", "url": "https://www.digitalsilk.com/web-design/restaurant-website-design/", "name": "Restaurant Website Design Services | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2022-11-21T18:09:01+00:00", "dateModified": "2025-12-19T21:15:50+00:00", "description": "Looking for restaurant website design services? Design your website with Mark Digital Agency and attract more customers! View our work »", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/web-design/restaurant-website-design/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] } */
 
 var ds = { "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"restaurant-website-design\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"restaurant-website-design\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}" };
 //# sourceURL=jquery-core-js-extra
@@ -1661,9 +1663,9 @@ _hsq.push(["setContentType", "standard-page"]);
 
 document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
 
-{ "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] }
+/* { "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] } */
 
-{
+/* {
     "@context": "https://schema.org",
         "@graph": [
             {
@@ -1778,7 +1780,7 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     }
                 }
             },
-            {
+            /* {
                 "@context": "https://schema.org/",
                 "@type": "Product",
                 "name": "Mark Digital Agency Web Design Agency",
@@ -1789,8 +1791,8 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     "worstRating": "1",
                     "ratingCount": "114"
                 }
-            }
-        ]
+            } */
+       */  ]
 }
 
 var leadin_wordpress = { "userRole": "visitor", "pageType": "home", "leadinPluginVersion": "11.3.33" };
@@ -1881,7 +1883,7 @@ wto.push(['webTraxs']);
 })();
 
 /* ========== JavaScript from services.html ========== */
-{ "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/services/", "url": "https://www.digitalsilk.com/", "name": "Services | Web Design, Branding, Digital Marketing | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2022-07-21T15:55:53+00:00", "dateModified": "2024-11-11T22:31:18+00:00", "description": "Results-Focused Digital Services: Mark Digital Agency creates SUPERIOR digital experiences to Grow Brands Online. View Our Work >", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] }
+/* { "@context": "https://schema.org", "@graph": [{ "@type": "WebPage", "@id": "https://www.digitalsilk.com/services/", "url": "https://www.digitalsilk.com/", "name": "Services | Web Design, Branding, Digital Marketing | Mark Digital Agency", "isPartOf": { "@id": "https://www.digitalsilk.com/#website" }, "datePublished": "2022-07-21T15:55:53+00:00", "dateModified": "2024-11-11T22:31:18+00:00", "description": "Results-Focused Digital Services: Mark Digital Agency creates SUPERIOR digital experiences to Grow Brands Online. View Our Work >", "inLanguage": "en-US", "potentialAction": [{ "@type": "ReadAction", "target": ["https://www.digitalsilk.com/"] }] }, { "@type": "WebSite", "@id": "https://www.digitalsilk.com/#website", "url": "https://www.digitalsilk.com/", "name": "Mark Digital Agency", "description": "Growing Brands Online", "publisher": { "@id": "https://www.digitalsilk.com/#organization" }, "potentialAction": [{ "@type": "SearchAction", "target": { "@type": "EntryPoint", "urlTemplate": "https://www.digitalsilk.com/?s={search_term_string}" }, "query-input": { "@type": "PropertyValueSpecification", "valueRequired": true, "valueName": "search_term_string" } }], "inLanguage": "en-US" }, { "@type": "Organization", "@id": "https://www.digitalsilk.com/#organization", "name": "Full-Service Web Design Agency | Mark Digital Agency", "url": "https://www.digitalsilk.com/", "logo": { "@type": "ImageObject", "inLanguage": "en-US", "@id": "https://www.digitalsilk.com/#/schema/logo/image/", "url": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "contentUrl": "https://www.digitalsilk.com/wp-content/uploads/2022/12/digitalsilk.com_social-share.jpg", "width": 1200, "height": 600, "caption": "Full-Service Web Design Agency | Mark Digital Agency" }, "image": { "@id": "https://www.digitalsilk.com/#/schema/logo/image/" }, "sameAs": ["https://www.linkedin.com/company/digitalsilk/", "#"] }] } */
 
 var ds = { "ajax_url": "https://www.digitalsilk.com/wp-admin/admin-ajax.php", "query": "{\"page\":0,\"pagename\":\"services\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"name\":\"services\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"category_name\":\"\",\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"all\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"search_columns\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":9,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}" };
 //# sourceURL=jquery-core-js-extra
@@ -1915,9 +1917,9 @@ _hsq.push(["setContentType", "standard-page"]);
 
 document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime());
 
-{ "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] }
+/* { "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] } */
 
-{
+/* {
     "@context": "https://schema.org",
         "@graph": [
             {
@@ -2032,7 +2034,7 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     }
                 }
             },
-            {
+            /* {
                 "@context": "https://schema.org/",
                 "@type": "Product",
                 "name": "Mark Digital Agency Web Design Agency",
@@ -2043,8 +2045,8 @@ document.getElementById("ak_js_4").setAttribute("value", (new Date()).getTime())
                     "worstRating": "1",
                     "ratingCount": "114"
                 }
-            }
-        ]
+            } */
+       */  ]
 }
 
 var leadin_wordpress = { "userRole": "visitor", "pageType": "home", "leadinPluginVersion": "11.3.33" };
@@ -2255,7 +2257,7 @@ gform.initializeOnLoaded(function () { gformInitSpinner(29, 'https://www.digital
 /* ]]> */
 
 /* ========== JavaScript migrated from index.html ========== */
-{ "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] }
+/* { "prefetch": [{ "source": "document", "where": { "and": [{ "href_matches": "/*" }, { "not": { "href_matches": ["/wp-*.php", "/wp-admin/*", "/wp-content/uploads/*", "/wp-content/*", "/wp-content/plugins/*", "/wp-content/themes/digitalsilk/*", "/*\\?(.+)"] } }, { "not": { "selector_matches": "a[rel~=\"nofollow\"]" } }, { "not": { "selector_matches": ".no-prefetch, .no-prefetch a" } }] }, "eagerness": "conservative" }] } */
 
 /* ========== JavaScript migrated from index.html ========== */
 /* <![CDATA[ */

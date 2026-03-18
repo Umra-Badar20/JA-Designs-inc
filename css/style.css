@@ -1098,7 +1098,9 @@ a {
     --section-title-color: var(--section-title-color-alt);
     --btn-link-color: var(--secondary-color1);
     --btn-secondary-gradient: linear-gradient(92.64deg, #6AFFF6 0%, #00E4FF 100%);
-    --btn-secondary-color: var(--primary-color2)
+    --btn-secondary-color: var(--primary-color2);
+    z-index: 2;
+    
 }
 
 body,
